@@ -1,0 +1,242 @@
+body {
+    font-family: Verdana, sans-serif, sans-serif;
+    background: url(https://cdn.pixabay.com/photo/2020/08/08/20/27/cellphone-5473878_960_720.png) no-repeat;
+    background-size: cover;
+    height: 100vh;
+  }
+  
+  h1 {
+    text-align: center;
+    font-family: Tahoma, Arial, sans-serif;
+    color: #000000;
+    margin: 80px 0;
+  }/*boutton,*/
+  
+  .box {
+    width: 40%;
+    margin: 0 auto;
+    background: rgba(255,255,255,0.2);
+    padding: 35px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 2px/300px;
+    background-clip: padding-box;
+    text-align: center;
+  }
+  
+  .button {
+    font-size: 1em;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    border: 2px solid #868a88;
+    border-radius: 5px/500px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+  }
+  .button:hover {
+    background: #505050;
+  }
+  
+  .overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .overlay:target {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all 5s ease-in-out;
+  }
+  
+  .popup h2 {
+    margin-top: 0;
+    color: #333;
+    font-family: Tahoma, Arial, sans-serif;
+  }
+  .popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+  }
+  .popup .close:hover {
+    color: #06D85F;
+  }
+  .popup .content {
+    max-height: 30%;
+    overflow: auto;
+  }
+  
+  @media screen and (max-width: 700px){
+    .box{
+      width: 70%;
+    }
+    .popup{
+      width: 70%;
+    }
+  }
+
+body,
+html,
+header,
+h1 {
+  margin: 0px;
+  padding: 0px;
+}
+header,
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+body {
+  font-family: "Vrinda", serif;
+}
+
+.wrapper {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+
+.content {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  text-shadow: 1px, 1px, 10px, black;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+.subtitle {
+  font-size: 20px;
+}
+h4 {
+  text-align: center;
+}
+main {
+  image: url("https://www.laveyronrecrute.com/uploads/2019/12/avatar-chrystel-rond.png");
+  width: 900px;
+  margin: 80px auto;
+  text-align: justify;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 75%);
+
+img {
+  width: 200px;
+  right: 100px;
+  font-size: 1000px;
+}
+
+li {
+  display: inline;
+  padding: 20px;
+  font-size: largeur;
+}
+
+li a {
+  text-decoration: none;
+  color: rgb(172, 170, 170);
+  padding: 8px;
+}
+
+li a:hover {
+  color: rgb(177, 177, 177);
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.TopContainer {
+  background-color: #000000;
+  position: relative;
+}
+
+.Bouton {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  text-align: center;
+  font-size: 18px;
+  color: #676767;
+  position: relative;
+  text-align: center;
+  color: #353535;
+  font-size: 50px;
+  font-family: "Cormorant Garamond", serif;
+  width: 90%;
+  margin: 40px auto;
+  text-align: center;
+}
+button {
+  margin: 20px;
+}
+.menu {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  text-align: right;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 20%);
+  padding: 15px;
+}
+.menu{
+    margin: 0;
+}
+ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+background-color: #f1f1f1;/*couleur de fond*/
+width: 10%;/*prends 25 % de la page*/
+border:1px solid #555;
+position: fixed;/*permet a fixer le menu*/
+height: 100%;/*prends toute la page en hauteur*/
+
+}
+/*li {
+text-align: center;/*centrer les picos*/
+/*border-bottom: 1px solid #555;/*une bordure en bas de chaque li*/
+/*}*/
+li a {
+display: block;/*permet de rendre le block cliquable*/
+padding: 8px 0 8px 16px;/*espace entre le contenu et la bordure*/
+text-decoration: none; /*sans souligné*/
+color: #000;/*noir*/
+}
+li a:hover {/*lorsque je survole avec la souris*/
+box-shadow: 0 2px 20px rgba(0, 0, 0, 20%);
+color: white;
+}
+5
+li a.active {
+background-color: #4CAF50;/*vert*/
+color: white;/*home écrit en blanc*/
+}
+li:last-child {
+border-bottom: none;/*enlever la derniere bordure en plus dans le
+dernier li*/
+}
